@@ -13,7 +13,7 @@ public:
          
         for(int m = 1;m <= n/2;m++){
           
-            if( !((x%(int)pow(10,m)/(int)pow(10,m-1)) == (x%(int)pow(10,n+1-m)/(int)pow(10,n-m)))) return false;
+            if( !((x%(int)pow(10,m)/(int)pow(10,m-1)) == (x%(int)pow(10,n+1-m)/(int)pow(10,n-m)))) return false;//pow 返回的是double
         }
         return true;
     }
